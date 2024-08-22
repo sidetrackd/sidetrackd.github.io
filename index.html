@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>sidetrackd</title>
+
+    <link rel="stylesheet" type="text/css" href="index.css" />
+</head>
+
+<body>
+    <button id="greeting"></button>
+    <script type="text/javascript">
+        function getRandomInt(min, max) {
+            min = Math.ceil(min);
+            max = Math.floor(max);
+            return Math.floor(Math.random() * (max - min + 1)) + min;
+        }
+        var greetings = new Array(
+            "brewing",
+            "on the horizon",
+            "arriving shortly",
+            "underway",
+            "in the works"
+        );
+        var randInt = getRandomInt(0, greetings.length - 1);
+        var button = document.getElementById("greeting");
+        console.log(randInt);
+        button.innerText = greetings[randInt] + " ...";
+    </script>
+</body>
+
+</html>
