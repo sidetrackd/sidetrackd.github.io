@@ -30,6 +30,7 @@
 }
 
 body {
+  font-family: var(--primary-font);
   background-color: var(--bg-color);
   color: var(--fg-color);
   display: flex;
@@ -124,6 +125,12 @@ body {
 .glow:hover,
 .glow:hover::before {
   animation: animate 0.5s infinite linear;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  mix-blend-mode: difference;
 }
 
 @keyframes iso-marquee {
